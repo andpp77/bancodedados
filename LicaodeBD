@@ -10,11 +10,35 @@ CREATE TABLE clientes (
 );
 
 CREATE TABLE veiculos (
-    marca VARCHAR(50) NOT NULL, -- Marca do veículo
+    cod_veiculos NUMBER(6) not null,
+    marca VARCHAR(50) NOT NULL,
     modelo VARCHAR(50) NOT NULL, -- Modelo do veículo
     ano INT, -- Ano de fabricação
     placa VARCHAR(10) UNIQUE, -- Placa do veículo (deve ser única)
     cor VARCHAR(20), -- Cor do veículo
     quilometragem INT, -- Quilometragem atual
     preco DECIMAL(10, 2), -- preço do veiculo
+    constraint pk_veiculos primary key (cod_veiculos)
 );
+
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(1,'Adolfo irritaler','adolfo.irritaler@gmail.com','+49 
+941 908140','Pariser Platz, 10117 Berlin, Alemanha','19-DEC-1902','28-MAY-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(2,'Neymar Jr','neymar.jr@gmail.com','+55 19 957899080',
+'Av. Bartholomeu de Gusmão, 83 - Aparecida, Santos - SP, 11045-401','12-DEC-1990'
+,'28-MAY-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(3,)
+
+
+SELECT
+    COD_CLIENTES,
+    NOME,
+    EMAIL,
+    TELEFONE,
+    ENDERECO,
+    DATA_NASCIMENTO,
+    DATA_CADASTRO
+FROM
+    CLIENTES;
