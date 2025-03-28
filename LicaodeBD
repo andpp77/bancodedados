@@ -1,0 +1,20 @@
+CREATE TABLE clientes (
+    cod_clientes number(6) not null ,
+    nome VARCHAR2(100) NOT NULL, 
+    email VARCHAR2(100) UNIQUE NOT NULL,
+    telefone VARCHAR2(20), 
+    endereco VARCHAR2(255),
+    data_nascimento DATE, 
+    data_cadastro DATE DEFAULT CURRENT_TIMESTAMP, 
+    constraint pk_clientes primary key (cod_clientes)
+);
+
+CREATE TABLE veiculos (
+    marca VARCHAR(50) NOT NULL, -- Marca do veículo
+    modelo VARCHAR(50) NOT NULL, -- Modelo do veículo
+    ano INT, -- Ano de fabricação
+    placa VARCHAR(10) UNIQUE, -- Placa do veículo (deve ser única)
+    cor VARCHAR(20), -- Cor do veículo
+    quilometragem INT, -- Quilometragem atual
+    preco DECIMAL(10, 2), -- preço do veiculo
+);
