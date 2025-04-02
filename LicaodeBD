@@ -29,16 +29,30 @@ INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
 'Av. Bartholomeu de Gusmão, 83 - Aparecida, Santos - SP, 11045-401','12-DEC-1990'
 ,'28-MAY-2025');
 INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(3,)
+,data_cadastro)values(3,'Josias mattos','josias.mattos@gmail.com','+55 11 965238965'
+,'Riachão - MA, 65990-000','16-FEB-1990','28-JUN-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(4,'Gabriel da Rocha','gabriel.rocha@gmail.com','+55 11 965324512'
+,'Povoado matinha Praia de pontal - Itacaré, BA, 45530-000','31-JAN-2000','28-JUN-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(5,'Anderson Silva','anderson.silva@gmail.com','+55 11 978549632'
+,'Fazenda soberana Rio de contas, Itacaré - BA, 45530-000','14-JAN-2010','28-JUN-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(6,'Fernando Oliveira','fernando.oliveira@gmail.com','+55 11 978549632'
+,'Fazenda soberana Rio de contas, Itacaré - BA, 45530-000','14-JAN-2010','28-JUN-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(7,'Paulo Eduardo','paulo.eduardo@gmail.com','+55 68 985243654'
+,'R. Gov. Romildo Magalhães, Jordão - AC, 69975-000','15-APR-2008','28-JUN-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(8,'George Henrique','george.henrique@gmail.com','+55 952014563'
+,'Av. Francisco de Paula Leite, 762 - Jardim Nely, Indaiatuba - SP, 13345-000',
+'20-APR-2001','28-JUN-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(9,'Carlos Almeida','carlos.Almeida@gmail.com','+55 11 947896231'
+,'Av. Emílio Chechinato, 706 - Jardim Samambaia, Itupeva - SP, 13295-000','17-APR-2008','28-JUN-2025');
+INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
+,data_cadastro)values(10,'João Grilo','joao.grilo@gmail.com','+55 11 978945612'
+,'R. Dondon Feitosa, 402 - Centro, Tauá - CE, 63660-000','01-JUN-1980','28-JUN-2025');
 
-
-SELECT
-    COD_CLIENTES,
-    NOME,
-    EMAIL,
-    TELEFONE,
-    ENDERECO,
-    DATA_NASCIMENTO,
-    DATA_CADASTRO
-FROM
-    CLIENTES;
+INSERT INTO VEICULOS (COD_VEICULOS,MARCA,MODELO,ANO,PLACA,COR,QUILOMETRAGEM,PRECO)VALUES 
+(1,'FIAT','UNO',1965,'AND-5896','Vermelho', 160,)
