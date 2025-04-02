@@ -22,37 +22,59 @@ CREATE TABLE veiculos (
 );
 
 INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(1,'Adolfo irritaler','adolfo.irritaler@gmail.com','+49 
-941 908140','Pariser Platz, 10117 Berlin, Alemanha','19-DEC-1902','28-MAY-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(2,'Neymar Jr','neymar.jr@gmail.com','+55 19 957899080',
+,data_cadastro)values
+(1,'Adolfo irritaler','adolfo.irritaler@gmail.com','+49 941 908140','Pariser Platz, 
+10117 Berlin, Alemanha','19-DEC-1902','28-MAY-2025'),
+(2,'Neymar Jr','neymar.jr@gmail.com','+55 19 957899080',
 'Av. Bartholomeu de Gusmão, 83 - Aparecida, Santos - SP, 11045-401','12-DEC-1990'
-,'28-MAY-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(3,'Josias mattos','josias.mattos@gmail.com','+55 11 965238965'
-,'Riachão - MA, 65990-000','16-FEB-1990','28-JUN-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(4,'Gabriel da Rocha','gabriel.rocha@gmail.com','+55 11 965324512'
-,'Povoado matinha Praia de pontal - Itacaré, BA, 45530-000','31-JAN-2000','28-JUN-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(5,'Anderson Silva','anderson.silva@gmail.com','+55 11 978549632'
-,'Fazenda soberana Rio de contas, Itacaré - BA, 45530-000','14-JAN-2010','28-JUN-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(6,'Fernando Oliveira','fernando.oliveira@gmail.com','+55 11 978549632'
-,'Fazenda soberana Rio de contas, Itacaré - BA, 45530-000','14-JAN-2010','28-JUN-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(7,'Paulo Eduardo','paulo.eduardo@gmail.com','+55 68 985243654'
-,'R. Gov. Romildo Magalhães, Jordão - AC, 69975-000','15-APR-2008','28-JUN-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(8,'George Henrique','george.henrique@gmail.com','+55 952014563'
+,'28-MAY-2025'),
+(3,'Josias mattos','josias.mattos@gmail.com','+55 11 965238965'
+,'Riachão - MA, 65990-000','16-FEB-1990','28-JUN-2025'),
+(4,'Gabriel da Rocha','gabriel.rocha@gmail.com','+55 11 965324512'
+,'Povoado matinha Praia de pontal - Itacaré, BA, 45530-000','31-JAN-2000','28-JUN-2025'),
+(5,'Anderson Silva','anderson.silva@gmail.com','+55 11 978549632'
+,'Fazenda soberana Rio de contas, Itacaré - BA, 45530-000','14-JAN-2010','28-JUN-2025'),
+(6,'Fernando Oliveira','fernando.oliveira@gmail.com','+55 11 978549632'
+,'Fazenda soberana Rio de contas, Itacaré - BA, 45530-000','14-JAN-2010','28-JUN-2025'),
+(7,'Paulo Eduardo','paulo.eduardo@gmail.com','+55 68 985243654'
+,'R. Gov. Romildo Magalhães, Jordão - AC, 69975-000','15-APR-2008','28-JUN-2025'),
+(8,'George Henrique','george.henrique@gmail.com','+55 952014563'
 ,'Av. Francisco de Paula Leite, 762 - Jardim Nely, Indaiatuba - SP, 13345-000',
-'20-APR-2001','28-JUN-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(9,'Carlos Almeida','carlos.Almeida@gmail.com','+55 11 947896231'
-,'Av. Emílio Chechinato, 706 - Jardim Samambaia, Itupeva - SP, 13295-000','17-APR-2008','28-JUN-2025');
-INSERT INTO CLIENTES (cod_clientes,nome,email,telefone,endereco,data_nascimento
-,data_cadastro)values(10,'João Grilo','joao.grilo@gmail.com','+55 11 978945612'
+'20-APR-2001','28-JUN-2025'),
+(9,'Carlos Almeida','carlos.Almeida@gmail.com','+55 11 947896231'
+,'Av. Emílio Chechinato, 706 - Jardim Samambaia, Itupeva - SP, 13295-000','17-APR-2008','28-JUN-2025'),
+(10,'João Grilo','joao.grilo@gmail.com','+55 11 978945612'
 ,'R. Dondon Feitosa, 402 - Centro, Tauá - CE, 63660-000','01-JUN-1980','28-JUN-2025');
 
 INSERT INTO VEICULOS (COD_VEICULOS,MARCA,MODELO,ANO,PLACA,COR,QUILOMETRAGEM,PRECO)VALUES 
-(1,'FIAT','UNO',1965,'AND-5896','Vermelho', 160,)
+(1,'FIAT','UNO',1965,'AND-5896','Vermelho', 160, 60),
+(2,'Volkswagen','Polo',2020,'ERW-7894','Preto',200,160),
+(3,'Volkswagen','Fusca',1970,'TOP-3565','Preto',120,30),
+(4,'Nissan','Kicks',2024,'YOU-3521','Prata',200,280),
+(5,'Fiat','Mobi',2019,'YER-1245','Amarelo',180,100),
+(6,'Fiat','Toro',2020,'YPE-1435','Branco',200,280),
+(7,'Volkswagen','Gol',2007,'NAO-9831','Vermelho',190,80),
+(8,'Nissan','Versa',2010,'BSD-8371','Preto',190,160),
+(9,'Peugeot','308',2010,'KIL-7251','Azul',190,75),
+(10,'Mazda','mx-5 miata',1990,'GAY-1710','Vermelho',190,580);
+SELECT
+    COD_CLIENTES,
+    NOME,
+    EMAIL,
+    TELEFONE,
+    ENDERECO,
+    DATA_NASCIMENTO,
+    DATA_CADASTRO
+FROM
+    CLIENTES;
+SELECT
+    COD_VEICULOS,
+    MARCA,
+    MODELO,
+    ANO,
+    PLACA,
+    COR,
+    QUILOMETRAGEM,
+    PRECO
+FROM
+    VEICULOS;
