@@ -1,0 +1,52 @@
+insert into diretor(cod_diretor, nome) values (1, 'Quentim Tarantino');
+insert into diretor(cod_diretor, nome) values (2, 'James Gunn');
+insert into diretor(cod_diretor, nome) values (3, 'Guilherme Del Toro');
+insert into diretor(cod_diretor, nome) values (4, 'José Padilha');
+insert into diretor(cod_diretor, nome) values (5, 'Steven Spilberg');
+insert into diretor(cod_diretor, nome) values (6, 'Winston Duke');
+insert into diretor(cod_diretor, nome) values (7, 'Jaume Collet-Serra');
+insert into diretor(cod_diretor, nome) values (8, 'Chris Columbus');
+insert into diretor(cod_diretor, nome) values (9, 'William Brent Bell');
+insert into diretor(cod_diretor, nome) values (10, 'Chad Stahelski');
+
+select * from diretor where cod_diretor = 5;
+select * from diretor where nome = 'Chris Columbus';
+select * from diretor where cod_diretor != 7;
+select * from diretor where cod_diretor <> 6;
+select * from diretor where nome != 'Winston Duke';
+select * from diretor where nome <> 'William Brent Bell';
+
+select * from diretor where cod_diretor >= 4;
+select * from diretor where cod_diretor <= 2;
+
+select * from diretor where nome like 'Guilherme%';
+select * from diretor where nome like '%Toro';
+select * from diretor where nome like '%Del%';
+select * from diretor where nome not like '%Del%';
+
+select * from filme order by cod_filme;
+select * from filme order by nome;
+select * from filme order by nome, ano;
+select * from filme order by cod_filme desc;
+
+select *
+from filme
+where nome like '%Sonic%'
+and ano >= 2014;
+
+select *
+from filme
+where nome like '%Tartarugas%'
+or ano >= 2023;
+
+select *
+from filme
+where (nome like '%Sonic%' or ano >= 2020)
+and DURACAO <= 140;
+
+select * from diretor where cod_diretor in 2;
+select * from diretor where cod_diretor in (2,3,4);
+select * from diretor where cod_diretor not in 2;
+select *
+from diretor
+where cod_diretor not in (2,3,4);
